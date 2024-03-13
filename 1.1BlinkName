@@ -1,0 +1,140 @@
+// GarethLHS
+// Subject: SIT210 Embedded System Development
+// Task 1.1BlinkName
+
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+g();
+a();
+r();
+e();
+t();
+h();
+
+/*word();
+h();
+i();
+l();
+t();
+o();
+n();
+s();
+m();
+i();
+t();
+h();
+*/
+
+
+
+delay(5000);
+}
+void word(){
+  delay(3500); //7 units
+}
+
+
+void a(){
+    //a .-
+  dit();
+  dah();
+}
+// b, c, d, 
+void e(){
+    //e .
+  dit();
+}
+
+//f, 
+void g(){
+  //g --.
+  dah();
+  dah();
+  dit();
+}
+
+void h(){
+  //h .....
+  dit();
+  dit();
+  dit();
+  dit();
+  dit();
+}
+
+//i
+void i(){
+  //h .....
+  dit();
+  dit();
+}
+//j, k,
+void l(){
+  //r .-.
+  dit();
+  dah();
+  dit();
+  dit();
+}
+// m,
+void m(){
+  //m --
+  dah();
+  dah();
+}
+
+void n(){
+  //n -.
+  dah();
+  dit();
+}
+
+void o(){
+  //n ---
+  dah();
+  dah();
+  dah();
+}
+// p, q,
+
+void r(){
+  //r .-.
+  dit();
+  dah();
+  dit();
+}
+void s(){
+  //s ...
+  dit();
+  dit();
+  dit();
+}
+
+ void t(){
+//t -
+  dah();
+ } 
+
+//u,v,w,x,y,z
+
+void dah(){
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1500);       // 3 units               // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(500);   // intercharacter time 1 unit
+}
+
+void dit(){
+    digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(500);    // 1 unit                   // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(500);   // intercharacter time 1 unit
+}
+
