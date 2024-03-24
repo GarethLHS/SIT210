@@ -16,8 +16,10 @@ void convert_name2Moorse_Code_and_Print(string name){
 	// I need to iterate  through eveny character of the string intil the \0
 	// and print the moorse code out for each character.
 	//
-	//for ( i = 0; i < name.len();i++)
-	//	cout	
+	//for (int i = 0; i < name.len();i++)
+	//	for(int m =0 m< moorse_code[letter].len(); m++){
+	//		print morse code for each letter " "
+	//	}	
 		
 		
 	return ;
