@@ -26,10 +26,6 @@ void convert_name2Moorse_Code_and_Print(string name){
 int main(){
 
 	
-	
-	
-	
-	
 	map<char,string> moorse_code{ \
 			{'A',".-"}, \
 			{'B',"-..."}, \
@@ -62,7 +58,14 @@ int main(){
 			};
 
 
-	print_Moorse_code(moorse_code);
+	//print_Moorse_code(moorse_code);
+	
+	cout << moorse_code['G'] << "\n" ;
+	cout << moorse_code['A'] << "\n" ;
+	cout << moorse_code['R'] << "\n" ;
+	cout << moorse_code['E'] << "\n" ;
+	cout << moorse_code['T'] << "\n" ;
+	cout << moorse_code['H'] << "\n" ;
 	
 	cout << "\n";
 
