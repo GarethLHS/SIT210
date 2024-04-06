@@ -16,13 +16,17 @@
 #include <Ultrasonic.h>
 #include <PubSubClient.h>
 
+//PROTOTYPING FUNCTIONS
 void callback(char* topic, byte* payload, unsigned int length);
 void reconnect();
+void wave_led();
+void pat_led();
 
 
 Ultrasonic ultrasonic(13,14);
 int distance;
 bool wave = false;
+bool pat = false;
 #define RED_LED A1
 
 
@@ -71,24 +75,34 @@ void loop() {
   Serial.print("Distance in CM: ");
   Serial.println(distance);
 
-  
-  if (distance < 50){
+  if( distance < 20){
+//tringer MQTT event
+    pat = true;
+    wave = false;
+    if (!client.connected()) {
+    reconnect();
+    }
+    client.subscribe(subscribed_topic);
+    client.publish(subscribed_topic,"Gareth - pat");
+    Serial.println("PUBLISHING SIT201 GARETH - PAT");
+      
+    delay(1000);
+
+  }else if (distance < 50){
     wave = true;
+    pat = false;
     //tringer MQTT event
     if (!client.connected()) {
     reconnect();
     }
     client.subscribe(subscribed_topic);
-    client.publish(subscribed_topic,"Gareth");
-    Serial.println("PUBLISHING SIT201 GARETH");
+    client.publish(subscribed_topic,"Gareth - wave");
+    Serial.println("PUBLISHING SIT201 GARETH WAVE");
 
     
-      
     delay(1000);
-  }else{
-    wave = false;
-
   }
+
   client.loop();  //This loop(); maintains connection to MQTT Server and needs to be called reularly.  
   delay(1000);
 
@@ -111,17 +125,10 @@ void callback(char* topic, byte* payload, unsigned int length) {
     Serial.print((char)payload[i]);
   }
   Serial.println();
-  //flash LED 3 times
-      for(int i=0; i< 3;i++){
-        digitalWrite(LED_BUILTIN,HIGH);
-        digitalWrite(RED_LED,HIGH);
-        Serial.print("LED FLASH ");
-        delay(600);
-        digitalWrite(LED_BUILTIN,LOW);
-        digitalWrite(RED_LED,LOW);
-        delay(600);
-      }
-  Serial.println();
+  if(wave)
+    wave_led();
+  else
+    pat_led();
 }
 
 
@@ -146,4 +153,34 @@ void reconnect() {
       delay(5000);
     }
   }
+}
+
+void pat_led(){
+  //flash LED 3 times
+
+      for(int i=0; i< 3;i++){
+        digitalWrite(LED_BUILTIN,HIGH);
+        digitalWrite(RED_LED,HIGH);
+        Serial.print("LED FLASH ");
+        delay(600);
+        digitalWrite(LED_BUILTIN,LOW);
+        digitalWrite(RED_LED,LOW);
+        delay(600);
+      }
+  Serial.println();
+}
+
+void wave_led(){
+  //flash LED 3 times
+
+      for(int i=0; i< 10;i++){
+        digitalWrite(LED_BUILTIN,HIGH);
+        digitalWrite(RED_LED,HIGH);
+        Serial.print("LED FLASH ");
+        delay(100);
+        digitalWrite(LED_BUILTIN,LOW);
+        digitalWrite(RED_LED,LOW);
+        delay(100);
+      }
+  Serial.println();
 }
