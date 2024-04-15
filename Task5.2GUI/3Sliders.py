@@ -96,9 +96,6 @@ class Ui_MainWindow(object):
 
     def exitProgram(self):
         print("Exiting Program")
-        GPIO.output(RED_LED,GPIO.LOW)
-        GPIO.output(BLUE_LED,GPIO.LOW)
-        GPIO.output(GREEN_LED,GPIO.LOW)
         GPIO.cleanup()
         app.quit()
 
