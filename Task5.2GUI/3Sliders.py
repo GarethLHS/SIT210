@@ -72,10 +72,7 @@ class Ui_MainWindow(object):
         self.ExitpushButton.setObjectName("ExitpushButton")
         self.ExitpushButton.clicked.connect(self.exitProgram)
 
-
-
-
-
+        
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
