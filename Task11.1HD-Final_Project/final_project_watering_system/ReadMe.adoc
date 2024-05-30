@@ -1,21 +1,73 @@
 :Author: ghiltonsmith
 :Email: {AuthorEmail}
 :Date: 23/03/2024
-:Revision: version#
+:Revision: version#1
 :License: Public Domain
 
-= Project: {Project}
+= Project: Portable battery operated solar watering system
 
-Describe your project
+The project that I have chosen to  complete is an automated watering system that is portable battery operated and solar charging balcony watering system for people who want a beautiful tranquil balcony garden without having to spend hours on the balcony maintaining a garden.
+
+This project should be suitable for the elderly, renters or people who travel and don’t want to sped each day looking after a balcony garden.
 
 == Step 1: Installation
 Please describe the steps to install this project.
 
-For example:
+Module 1: Raspberry Pi Indoor LED indicator
+	a. Install PI OS on board
+	b. Connect to Wifi
+	c. Enable remote access via SSH
+	d. Create venv virtual environment and activate
+	e. Connect Raspberry PI to LED
+	f.  Program GPIO Python code to turn on and off LED (skeleton code)
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+Module 2: Arduino WiFi 1010 MKR board 
+	a. add board to cloud.arduino.cc cloud environment
+	b. configure Wifi
+	c. connect Temperature/Hunidity sensor
+	e. program sensor and test output to serial console
+	f.  connect moisture sensor
+	g. program moisture sensor and output to serial console
+	h. connect 5v relay
+	i. program 5v relay to turn on and off and test
+	j. connect float switch to board 
+	k. program Arduino to receive digital signal from float switch
+
+Module 3: Battery Power solution
+	a. connect solar panel to power management board
+	b. connect battery to power management board
+	c. connect water pump to battery and relay and test.
+	
+Module 4: Think Speak Web integration
+	a. setup ThinkSpeak account
+	b. setup channel to receive data from Arduino
+	c. Program Arduino to send data via GET requests to Think Speak
+	d. configure ThinkSpeak to display data to webpage.
+
+Module 5: Think Speak MQTT broker setup
+	a. configure MQTT broker on ThinkSpeak Web Page
+	b. configure Raspberry Pi to subscribe to published topic
+
+Module 6: IFTTT Web alert system
+	a. Setup IFTTT account
+	b. purchase Pro account
+	c. configure IFTTT to have permission to send Gmail email
+	c. setup WebHook to trigger email for  Empty bucket
+	d. setup WebHook to trigger email for Low Battery
+
+Module 7: Program IFTTT alerts on Arduino
+	a. program webhooks get requests to trigger alerts
+	b. write function ifttt Empty Bucket
+	c. write function ifttt Low battery
+
+Module 8: Build physical hose system
+	a. connect watering irrigation drip system
+	b. test system with watering system connected.
+
+Module 9: Full system test with components
+
+Module 10: Produce Live Demo and Recorded Video
+https://youtu.be/092AvqhdYYs
 
 == Step 2: Assemble the circuit
 
