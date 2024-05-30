@@ -6,22 +6,22 @@ import time
 # GPIO pin for the LED
 LED_PIN = 21
 
-channel_ID = "2482749"
+channel_ID = "<YOUR CHANNEL ID>"
 
 # The hostname of the ThingSpeak MQTT broker.
 mqtt_host = "mqtt3.thingspeak.com"
 
 # Your MQTT credentials for the device
-mqtt_client_ID = "KggtIxUzNg4RJQ49GyUnFw0"
-mqtt_username = "KggtIxUzNg4RJQ49GyUnFw0"
-mqtt_password = "h8voyNkF1v4COtNqQuCTj2XT"
+mqtt_client_ID = "<YOUR CLIENT ID>"
+mqtt_username = "<YOUR MQTT USERNAME>"
+mqtt_password = "<YOUR MQTT PASSWORD>"
 
 # https://au.mathworks.com/help/thingspeak/mqtt-basics.html
 # Callback function to handle connection
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
     # Subscribe to the channel's MQTT topic upon connection
-    client.subscribe("channels/2482749/subscribe/fields/field3") #Bucket empty or not
+    client.subscribe("channels/<YOUR CHANNEL ID>/subscribe/fields/field3") #Bucket empty or not
 
 
 # Callback function to handle message received
