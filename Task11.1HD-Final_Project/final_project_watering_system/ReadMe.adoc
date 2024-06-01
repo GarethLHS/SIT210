@@ -135,11 +135,37 @@ Create an account on https://thingspeak.com
 image::Thinkspeak.png[ThinkSpeak]
 image::Thinkspeak1.png[ThinkSpeak Dashboard]
 
-== Task 4: Configure IFTTT Webhooks
+*Configure MQTT hosting
+Go to Devices --> MQTT --> Add new Devices --> Give it a name and select the channel you have already created --> then click Add Device
+
+This will create your MQTT hosting you will need to copy the Client ID and credentials and put these details into your Arduino code.
+
+
+== Step 4: Configure IFTTT Webhooks
 
 You will need to configure 2 webhooks and edit they Arduino code to replace your webhook address.
 
 image::ifttt-config.png[IFTTT Webhook configuration]
+
+== Step 5: Connect the Drip irrigation system
+
+Connect your clear (21)Pope tubing to the water pump the other end connects to (23) Ladco hose fitting. 
+This then clicks into (22) Ladco Click Poly Irrigation Tube fitting.
+
+Now the 4mm tube gets connected to the (24) T joind then to the (25) Holman 4mm drip irrigation end that will be  spiked into your pot plant.
+
+
+|===
+| ID | Part name                               | Part number | Quantity  | Store
+| 20 | Holman 4mm water irrigation pipe 10m    | 3120586     | 1         | Bunnings
+| 21 | Pope 13mm clear vynal tubing 5m         | 3130568     | 1         | Bunnings
+| 22 | Ladco 4mm Click Poly Irrigation Tube fit| 3110772     | 1         | Bunnings
+| 23 | Ladco 13mm Click Poly Hose fitting      | 3110337     | 1         | Bunnings
+| 24 | Pope 4mm Barbed Tee - 10 Pack           | 3120352     | 1         | Bunnings
+| 25 | Holman 4mm Barbed Drip Iragation 5 Pack | 3120576     | 1         | Bunnings
+|===
+
+
 
 === My Building Methodology
 
