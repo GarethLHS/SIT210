@@ -10,6 +10,10 @@ The project that I have chosen to  complete is an automated watering system that
 
 This project should be suitable for the elderly, renters or people who travel and don’t want to sped each day looking after a balcony garden.
  
+* This project has been built from Debian Lunix and all commands are for configuring this project from a Debian Linux host. *
+
+
+
 
 image::Overview.png[Project Hardware Overview]
 
@@ -91,12 +95,27 @@ image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
 |===
 
 
+
+....
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+
+$sudo apt-get install git 
+
+$ git clone https://github.com/GarethLHS/SIT210.git
+$ cd Task11.1HD-Final_Project
+
+....
+
+*Download Arduino IDE from arduino.cc*
+https://www.arduino.cc/en/software
+
+Configure your Arduino for IoT cloud add your device onto IoT cloud. This will make configuring your Arduino and ensure you have updated SSL root certificates if required.
+
+Once you are running the Arduino IDE you can open the final_project_watering_system.ino, arduino_secrets.h and thingsProperties.h files confiure for your network by changeing the SSID and credentials.
+
+
 image::Arduino-connections.png[Arduino Hardware connections]
-
-
-
-
-
 
 
 === My Building Methodology
