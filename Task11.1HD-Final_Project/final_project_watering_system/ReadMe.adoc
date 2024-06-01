@@ -32,60 +32,67 @@ I built this project as modules and brought all the modules together to complete
 *Module 1: Raspberry Pi Indoor LED indicator*::
 
 
-* a. Install PI OS on board
-* b. Connect to Wifi
-* c. Enable remote access via SSH
-* d. Create venv virtual environment and activate
-* e. Connect Raspberry PI to LED
-* f.  Program GPIO Python code to turn on and off LED (skeleton code).
+* Install PI OS on board
+* Connect to Wifi
+* Enable remote access via SSH
+* Create venv virtual environment and activate
+* Connect Raspberry PI to LED
+* Program GPIO Python code to turn on and off LED (skeleton code).
 
 
-Module 2: Arduino WiFi 1010 MKR board 
-	a. add board to cloud.arduino.cc cloud environment
-	b. configure Wifi
-	c. connect Temperature/Hunidity sensor
-	e. program sensor and test output to serial console
-	f.  connect moisture sensor
-	g. program moisture sensor and output to serial console
-	h. connect 5v relay
-	i. program 5v relay to turn on and off and test
-	j. connect float switch to board 
-	k. program Arduino to receive digital signal from float switch
+*Module 2: Arduino WiFi 1010 MKR board*::
 
-Module 3: Battery Power solution
-	a. connect solar panel to power management board
-	b. connect battery to power management board
-	c. connect water pump to battery and relay and test.
+* add board to cloud.arduino.cc cloud environment
+* configure Wifi
+* connect Temperature/Hunidity sensor
+* program sensor and test output to serial console
+* connect moisture sensor
+* program moisture sensor and output to serial console
+* connect 5v relay
+* program 5v relay to turn on and off and test
+* connect float switch to board 
+* program Arduino to receive digital signal from float switch
+
+*Module 3: Battery Power solution*::
+
+* connect solar panel to power management board
+* connect battery to power management board
+* connect water pump to battery and relay and test.
 	
-Module 4: Think Speak Web integration
-	a. setup ThinkSpeak account
-	b. setup channel to receive data from Arduino
-	c. Program Arduino to send data via GET requests to Think Speak
-	d. configure ThinkSpeak to display data to webpage.
+*Module 4: Think Speak Web integration*::
 
-Module 5: Think Speak MQTT broker setup
-	a. configure MQTT broker on ThinkSpeak Web Page
-	b. configure Raspberry Pi to subscribe to published topic
+* setup ThinkSpeak account
+* setup channel to receive data from Arduino
+* Program Arduino to send data via GET requests to Think Speak
+* configure ThinkSpeak to display data to webpage.
 
-Module 6: IFTTT Web alert system
-	a. Setup IFTTT account
-	b. purchase Pro account
-	c. configure IFTTT to have permission to send Gmail email
-	c. setup WebHook to trigger email for  Empty bucket
-	d. setup WebHook to trigger email for Low Battery
+*Module 5: Think Speak MQTT broker setup*::
 
-Module 7: Program IFTTT alerts on Arduino
-	a. program webhooks get requests to trigger alerts
-	b. write function ifttt Empty Bucket
-	c. write function ifttt Low battery
+* configure MQTT broker on ThinkSpeak Web Page
+* configure Raspberry Pi to subscribe to published topic
 
-Module 8: Build physical hose system
-	a. connect watering irrigation drip system
-	b. test system with watering system connected.
+*Module 6: IFTTT Web alert system*::
 
-Module 9: Full system test with components
+* Setup IFTTT account
+* purchase Pro account
+* configure IFTTT to have permission to send Gmail email
+* setup WebHook to trigger email for  Empty bucket
+* setup WebHook to trigger email for Low Battery
 
-Module 10: Produce Live Demo and Recorded Video
+*Module 7: Program IFTTT alerts on Arduino*::
+
+* program webhooks get requests to trigger alerts
+* write function ifttt Empty Bucket
+* write function ifttt Low battery
+
+*Module 8: Build physical hose system*::
+
+* connect watering irrigation drip system
+* test system with watering system connected.
+
+*Module 9: Full system test with components*
+
+*Module 10: Produce Live Demo and Recorded Video*
 https://youtu.be/092AvqhdYYs
 
 == Step 2: Assemble the circuit
