@@ -239,23 +239,12 @@ I built this project as modules and brought all the modules together to complete
 *Module 10: Produce Live Demo and Recorded Video*
 https://youtu.be/092AvqhdYYs
 
-== Step 2: Assemble the circuit
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+=== Video Demo
 
-== Step 3: Load the code
 
-Upload the code contained in this sketch on to your board
+https://youtu.be/092AvqhdYYs
 
-=== Folder structure
-
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
 
 === License
 This project is released under a {License} License.
@@ -266,11 +255,35 @@ To contribute to this project please contact ghiltonsmith https://id.arduino.cc/
 === BOM
 Add the bill of the materials you need for this project.
 
+
 |===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10
-| L1 | Red LED        | 2345-asdf   | 5
-| A1 | Arduino Zero   | ABX00066    | 1
+| ID | Part name                               | Part number | Quantity
+| 01 | 10k Resistor                            |             | 1
+| 02 | Red LED                                 |             | 1
+| 03 | Raspberry PI 4B                         |             | 1
+| 04 | Prototype Breadboard                    |             | 1
+| 05 | Male-to-Female Jumper Cables            |             | 2
+| 07 | 12-24V Solar Panel                      | ZM9052      | 1         | Jaycar
+| 08 | 12V SLA Lead Acid Battery 6Ah           | SB2486      | 1         | Jaycar
+| 09 | 5V relay                                | XC441       | 1         | Jaycar
+| 10 | Prototype Breadboard                    | PB8820      | 1         | Jaycar
+| 11 | Pin-to-Pin Jumper Cables                | WC6024      | various   | Jaycar
+| 11 | Pin-to-Socket Jumper Cables             | WC6028      | various   | Jaycar
+| 11 | Socket-to-Socket Jumper Cables          | WC6026      | various   | Jaycar
+| 12 | 15 Amp 12-way Screw Terminal Strip      | HM230       | 1         | Jaycar
+| 13 | 7.5 Amp 2 Core Tinned DC Power Cable    | WH2057      | 1m        | Jaycar
+| 14 | Float Switch                            | SF0920      | 1         | Jaycar
+| 15 | DHT22 Temperature/Humidity sensor       | 018-DHT22   | 1         | Core-electronics
+| 16 | BLA TMC Submersible Water Pump 24V      | 116270      | 1         | BCF
+| 17 | Gravity:Analog Soil Moisture Sensor     | SEN308      | 1         | Core-electornics
+| 18 | Solar Power Manager 12V Battery         | DFR0580     | 1         | Core-electornics
+| 19 | Arduin MKR WiFi 1010 IoT Board          | ABX00023    | 1         | Core-electornics
+| 20 | Holman 4mm water irrigation pipe 10m    | 3120586     | 1         | Bunnings
+| 21 | Pope 13mm clear vynal tubing 5m         | 3130568     | 1         | Bunnings
+| 22 | Ladco 4mm Click Poly Irrigation Tube fit| 3110772     | 1         | Bunnings
+| 23 | Ladco 13mm Click Poly Hose fitting      | 3110337     | 1         | Bunnings
+| 24 | Pope 4mm Barbed Tee - 10 Pack           | 3120352     | 1         | Bunnings
+| 25 | Holman 4mm Barbed Drip Iragation 5 Pack | 3120576     | 1         | Bunnings
 |===
 
 
