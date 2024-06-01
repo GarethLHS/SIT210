@@ -15,11 +15,12 @@ This project should be suitable for the elderly, renters or people who travel an
 
 
 
+image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
 
 
 === My Building Methodology
 I built this project as modules and brought all the modules together to complete the project.
-image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
+
 Module 1: Raspberry Pi Indoor LED indicator
 	a. Install PI OS on board
 	b. Connect to Wifi
