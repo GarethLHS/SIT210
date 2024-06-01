@@ -132,6 +132,10 @@ Create an account on https://thingspeak.com
 * field5=voltage
 
 
+image::Thinkspeak.png[ThinkSpeak]
+image::Thinkspeak1.png[ThinkSpeak Dashboard]
+
+
 === My Building Methodology
 
 
