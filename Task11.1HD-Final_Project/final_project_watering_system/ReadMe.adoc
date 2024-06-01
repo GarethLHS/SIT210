@@ -71,19 +71,22 @@ image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
 
 **Parts Required**
 |===
-| ID | Part name                              | Part number | Quantity  | Store
-| 07 | 12-24V Solar Panel                     | ZM9052      | 1         | Jaycar
-| 08 | 12V SLA Lead Acid Battery 6Ah          | SB2486      | 1         | Jaycar
-| 09 | 5V relay                               | XC441       | 1         | Jaycar
-| 10 | Prototype Breadboard                   | PB8820      | 1         | Jaycar
-| 11 | Pin-to-Pin Jumper Cables               | WC6024      | various   | Jaycar
-| 11 | Pin-to-Socket Jumper Cables            | WC6028      | various   | Jaycar
-| 11 | Socket-to-Socket Jumper Cables         | WC6026      | various   | Jaycar
-| 12 | 15 Amp 12-way Screw Terminal Strip     | HM230       | 1         | Jaycar
-| 13 | 7.5 Amp 2 Core Tinned DC Power Cable   | WH2057      | 1m        | Jaycar
-| 14 | Float Switch                           | SF0920      | 1         | Jaycar
-| 15 | DHT22 Temperature/Humidity sensor      | 018-DHT22   | 1         | Core-electronics
-| 16 | BLA TMC Submersible Water Pump 24V     | 116270      | 1         | BCF
+| ID | Part name                               | Part number | Quantity  | Store
+| 07 | 12-24V Solar Panel                      | ZM9052      | 1         | Jaycar
+| 08 | 12V SLA Lead Acid Battery 6Ah           | SB2486      | 1         | Jaycar
+| 09 | 5V relay                                | XC441       | 1         | Jaycar
+| 10 | Prototype Breadboard                    | PB8820      | 1         | Jaycar
+| 11 | Pin-to-Pin Jumper Cables                | WC6024      | various   | Jaycar
+| 11 | Pin-to-Socket Jumper Cables             | WC6028      | various   | Jaycar
+| 11 | Socket-to-Socket Jumper Cables          | WC6026      | various   | Jaycar
+| 12 | 15 Amp 12-way Screw Terminal Strip      | HM230       | 1         | Jaycar
+| 13 | 7.5 Amp 2 Core Tinned DC Power Cable    | WH2057      | 1m        | Jaycar
+| 14 | Float Switch                            | SF0920      | 1         | Jaycar
+| 15 | DHT22 Temperature/Humidity sensor       | 018-DHT22   | 1         | Core-electronics
+| 16 | BLA TMC Submersible Water Pump 24V      | 116270      | 1         | BCF
+| 17 | Gravity:Analog Soil Moisture Sensor     | SEN308      | 1         | Core-electornics
+| 18 | Solar Power Manager 12V Battery         | DFR0580     | 1         | Core-electornics
+| 19 | Arduin MKR WiFi 1010 IoT Board          | ABX00023    | 1         | Core-electornics
 
 |===
 
