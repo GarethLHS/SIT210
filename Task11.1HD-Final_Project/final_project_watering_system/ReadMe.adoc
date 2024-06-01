@@ -11,15 +11,15 @@ The project that I have chosen to  complete is an automated watering system that
 This project should be suitable for the elderly, renters or people who travel and don’t want to sped each day looking after a balcony garden.
 == Set by Step Installation
 
-= Step 1: Connecting Raspberry Pi up
+== Step 1: Connecting Raspberry Pi up
 
 
 
 
 
-== My Building Methodology
+=== My Building Methodology
 I built this project as modules and brought all the modules together to complete the project.
-![RaspberryPi](Raspberry_PI4-connections.png)
+![RaspberryPi](Raspberry_PI4-connections.png?raw=true "PI Hardware Connections")
 Module 1: Raspberry Pi Indoor LED indicator
 	a. Install PI OS on board
 	b. Connect to Wifi
