@@ -24,17 +24,21 @@ image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
 
 
 === My Building Methodology
+
+
 I built this project as modules and brought all the modules together to complete the project.
 
-*Module 1: Raspberry Pi Indoor LED indicator*
-...
+
+*Module 1: Raspberry Pi Indoor LED indicator*::
+
+
 * a. Install PI OS on board
 * b. Connect to Wifi
 * c. Enable remote access via SSH
 * d. Create venv virtual environment and activate
 * e. Connect Raspberry PI to LED
 * f.  Program GPIO Python code to turn on and off LED (skeleton code).
-...
+
 
 Module 2: Arduino WiFi 1010 MKR board 
 	a. add board to cloud.arduino.cc cloud environment
