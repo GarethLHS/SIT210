@@ -118,6 +118,20 @@ Once you are running the Arduino IDE you can open the final_project_watering_sys
 image::Arduino-connections.png[Arduino Hardware connections]
 
 
+== Step 3: Configure ThinkSpeak WebHosting
+
+Create an account on https://thingspeak.com
+ 
+
+**ThinkSpeak database::
+
+* field1=temp
+* field2=humid
+* field3=floatSwitchState
+* field4=soilMoistureValue
+* field5=voltage
+
+
 === My Building Methodology
 
 
