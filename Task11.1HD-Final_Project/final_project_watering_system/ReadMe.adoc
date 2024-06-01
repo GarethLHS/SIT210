@@ -20,6 +20,9 @@ This project should be suitable for the elderly, renters or people who travel an
 == My Building Methodology
 I built this project as modules and brought all the modules together to complete the project.
 ![RaspberryPi](https://github.com/GarethLHS/SIT210/blob/main/Task11.1HD-Final_Project/final_project_watering_system/Raspberry_PI4-connections.png)
+<p float="centre">
+	<img src="./Raspberry_PI4-connections.png" width="50%" />
+</p>
 Module 1: Raspberry Pi Indoor LED indicator
 	a. Install PI OS on board
 	b. Connect to Wifi
