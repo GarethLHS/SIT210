@@ -16,9 +16,31 @@ image::Overview.png[Project Hardware Overview]
 
 = Set by Step Installation
  
-== Step 1: Connecting Raspberry Pi up as Indoor Indicator
+== Step 1: Connecting Raspberry Pi up as Indoor Indicator::
+Connect LED the Negative leg of your LED to 220Ohm resister 
+connect 220Ohm resister to ground
+connect LED Positive(anode) leg (longer leg) to GPIO Pin 21
 
+from the CLI console of your RaspberryPi run the following commands
 
+....
+$ sudo apt-get update
+
+$ sudo apt-get dist-upgrade
+
+$ sudo apt-get install python3 git wget
+
+$ python3 -m venv indicator
+
+$ source indicator/bin/activate
+
+$ pip install paho.mqtt
+
+$ pip install RPi.GPIO
+
+$ wget https://github.com/GarethLHS/SIT210/blob/main/Task11.1HD-Final_Project/final_project_watering_system/RaspberryPi/balcony_wateringMQTT.py
+
+....
 
 image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
 
