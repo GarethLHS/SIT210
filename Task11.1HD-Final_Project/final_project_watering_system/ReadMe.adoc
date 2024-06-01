@@ -18,6 +18,16 @@ image::UML-DataFlowDiagram.png[UML Data Flow]
 = Set by Step Installation
  
 == Step 1: Connecting Raspberry Pi up as Indoor Indicator
+
+**Parts Required**
+|===
+| ID | Part name         | Part number | Quantity
+| 01 | 10k Resistor      |             | 1
+| 02 | Red LED           |             | 1
+| 03 | Raspberry PI 4B   |             | 1
+|===
+
+
 Connect LED the Negative leg of your LED to 220Ohm resister 
 connect 220Ohm resister to ground
 connect LED Positive(anode) leg (longer leg) to GPIO Pin 21
@@ -45,7 +55,13 @@ $ wget https://github.com/GarethLHS/SIT210/blob/main/Task11.1HD-Final_Project/fi
 
 You will need to use your favorite editor nedit, pico, vim to edit your mqtt settings that you will subscribe to from thinkspeak.com
 
+Follow the code below to run your Raspberry code
+....
+$ python3 ./balcony_wateringMQTT.py
+....
+
 image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
+
 
 
 == Step 2: Configuring Arduino MKR Wifi 1010 IoT board
