@@ -12,11 +12,12 @@ This project should be suitable for the elderly, renters or people who travel an
  
 
 image::Overview.png[Project Hardware Overview]
- 
+
+image::UML-DataFlowDiagram.png[UML Data Flow] 
 
 = Set by Step Installation
  
-== Step 1: Connecting Raspberry Pi up as Indoor Indicator::
+== Step 1: Connecting Raspberry Pi up as Indoor Indicator
 Connect LED the Negative leg of your LED to 220Ohm resister 
 connect 220Ohm resister to ground
 connect LED Positive(anode) leg (longer leg) to GPIO Pin 21
@@ -42,7 +43,19 @@ $ wget https://github.com/GarethLHS/SIT210/blob/main/Task11.1HD-Final_Project/fi
 
 ....
 
+You will need to use your favorite editor nedit, pico, vim to edit your mqtt settings that you will subscribe to from thinkspeak.com
+
 image::Raspberry_PI4-connections.png[Raspberry PI 4B Hardware Connections]
+
+
+== Step 2: Configuring Arduino MKR Wifi 1010 IoT board
+
+image::Arduino-connections.png[Arduino Hardware connections]
+
+
+
+
+
 
 
 === My Building Methodology
