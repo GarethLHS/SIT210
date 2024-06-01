@@ -135,6 +135,11 @@ Create an account on https://thingspeak.com
 image::Thinkspeak.png[ThinkSpeak]
 image::Thinkspeak1.png[ThinkSpeak Dashboard]
 
+== Task 4: Configure IFTTT Webhooks
+
+You will need to configure 2 webhooks and edit they Arduino code to replace your webhook address.
+
+image::ifttt-config.png[IFTTT Webhook configuration]
 
 === My Building Methodology
 
