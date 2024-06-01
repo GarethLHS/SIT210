@@ -9,10 +9,17 @@
 The project that I have chosen to  complete is an automated watering system that is portable battery operated and solar charging balcony watering system for people who want a beautiful tranquil balcony garden without having to spend hours on the balcony maintaining a garden.
 
 This project should be suitable for the elderly, renters or people who travel and don’t want to sped each day looking after a balcony garden.
+== Set by Step Installation
 
-== Step 1: Installation
-Please describe the steps to install this project.
+= Step 1: Connecting Raspberry Pi up
 
+
+
+
+
+== My Building Methodology
+I built this project as modules and brought all the modules together to complete the project.
+![RaspberryPi](./Raspberry_PI4-connections.png)
 Module 1: Raspberry Pi Indoor LED indicator
 	a. Install PI OS on board
 	b. Connect to Wifi
